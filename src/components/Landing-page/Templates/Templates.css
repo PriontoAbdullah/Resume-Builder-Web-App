@@ -1,0 +1,16 @@
+.card {
+	text-align: center;
+	border: none;
+	border-radius: 20px;
+	box-shadow: 2px 2px 10px lightgray;
+}
+
+.card img {
+	width: 90%;
+	margin-top: 10px;
+}
+
+.card-footer {
+	border-top: none;
+	background-color: white;
+}

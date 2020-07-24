@@ -1,0 +1,10 @@
+#About {
+	background-image: url(../../../images/latest-work-bg.png);
+	background-size: cover;
+	background-position: center;
+	height: 60vh;
+}
+
+#About button a {
+	color: white;
+}

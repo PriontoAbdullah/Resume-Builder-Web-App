@@ -1,0 +1,40 @@
+#Review {
+	background-image: url(../../../images/biography-bg.png);
+	background-size: cover;
+	background-position: center;
+	height: 60vh;
+	background-attachment: fixed;
+}
+
+blockquote {
+	padding: 7%;
+	font-style: italic;
+	line-height: 145%;
+	text-align: justify;
+	word-spacing: 0.5px;
+	letter-spacing: 0.8px;
+	position: relative;
+	margin-top: 10px;
+}
+
+blockquote:before {
+	content: "\201C";
+	font-size: 500%;
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: -5px;
+}
+
+cite {
+	display: block;
+	font-size: 90%;
+	margin-top: 30px;
+}
+
+cite img {
+	height: 45px;
+	border-radius: 50%;
+	margin-right: 10px;
+	vertical-align: middle;
+}

@@ -14,3 +14,8 @@
 	border-top: none;
 	background-color: white;
 }
+
+.card:hover {
+	box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+	background: #fff;
+}

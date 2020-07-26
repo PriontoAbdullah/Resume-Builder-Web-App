@@ -3,4 +3,5 @@
 	background-size: cover;
 	background-position: center;
 	height: 80vh;
+	overflow: hidden;
 }

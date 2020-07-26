@@ -32,13 +32,12 @@ const Contact = () => {
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                                <label class="form-check-label" for="defaultCheck1">
+                                <label class="form-check-label mb-2" for="defaultCheck1">
                                     Newsletter?
-                        </label>
+                                </label>
                             </div>
                             <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Drop us a line</label>
-                                <textarea class="form-control" id="FormControlTextarea1" rows="2"></textarea>
+                                <textarea class="form-control" id="FormControlTextarea1" rows="1" placeholder="Drop us a line"></textarea>
                             </div>
                             <button type="submit" class="btn btn-info">Submit</button>
                         </form>

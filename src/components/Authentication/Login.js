@@ -97,7 +97,7 @@ const SignUp = () => {
 
                         :
 
-                        <form onSubmit={handleSubmit(onSubmit)} className="py-5">
+                        <form onSubmit={handleSubmit(onSubmit)} className="py-2">
 
                             {
                                 auth.user != null && <p className="text-danger">* {auth.user.error}</p>
@@ -147,8 +147,8 @@ const SignUp = () => {
                                     ref={register({
                                         required: "Password is required",
                                         pattern: {
-                                            value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/i,
-                                            message: "Minimum eight characters, at least one uppercase letter, one lowercase letter and one number"
+                                            value: /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&;:])[A-Za-z\d@$!%*#?&;:]{8,}$/i,
+                                            message: "Minimum eight characters, at least one letter, one number and one special character"
                                         }
                                     })}
                                     placeholder="Password"

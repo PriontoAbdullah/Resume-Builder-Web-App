@@ -1,0 +1,51 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+.mainContent {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', Helvetica, sans-serif;
+	// display: flex;
+
+	.left {
+		width: 32%;
+		background-color: #e0e0e0;
+		// color: #fff;
+		position: absolute;
+		left: 0;
+		height: 100%;
+		overflow: hidden;
+		overflow-y: auto;
+	}
+
+	.right {
+		width: 68%;
+		position: absolute;
+		right: 0;
+		height: 100%;
+		overflow: hidden;
+		overflow-y: auto;
+	}
+
+	.printBtn {
+		padding: 10px 15px;
+		border-radius: 5px;
+		font-size: 18px;
+		outline: none;
+		border: none;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		margin: 10px 25px;
+		color: #fff;
+		cursor: pointer;
+		background-color: #1e1e1ecc;
+		transition: ease-in-out 200ms;
+
+		&:hover {
+			box-shadow: 0 0 25px 0 #4e4e4e;
+		}
+	}
+}

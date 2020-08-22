@@ -7,7 +7,7 @@ const Skills = ({ data, color }) => {
       <p className='heading' style={{ color: `${color.primary}` }}>
         {/* <span className='fas fa-puzzle-piece' /> */}
         <span className='material-icons' style={{ color: `${color.primary}` }}>
-          extension
+          assignment_turned_in
         </span>
         Skills
       </p>

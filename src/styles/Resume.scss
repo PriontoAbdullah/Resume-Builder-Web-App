@@ -1,0 +1,562 @@
+// @import './color-grey.scss';
+@import './color-seagreen.scss';
+// @import './color-blue.scss';
+// @import './color-indigo.scss';
+
+.resume {
+	margin: 0;
+	padding: 0;
+	height: 250vh;
+	// height: 100vh;
+	display: flex;
+	font-family: 'Roboto', Helvetica, sans-serif;
+
+	.left-content {
+		width: 255px;
+		background-color: $left-background-color;
+		color: $left-primary-color;
+		padding: 10px 10px;
+
+		.text {
+			font-size: 14px;
+			color: $left-text-color;
+		}
+		.icon {
+			font-size: 17px;
+			color: $left-text-secondary-color;
+		}
+
+		.photo-container {
+			width: 125px;
+			height: 125px;
+			overflow: hidden;
+			margin: 15px auto 0 auto;
+			box-shadow: 0 0 10px 0 $left-photo-shadow-color;
+			border-radius: 100%;
+			background-color: #fff;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: scale-down;
+			}
+		}
+
+		.name {
+			padding: 15px;
+			height: fit-content;
+			font-size: 28px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		.heading {
+			font-size: 18px;
+			font-weight: bold;
+			margin: 0;
+			span {
+				font-size: 18px;
+				width: fit-content;
+				margin-right: 6px;
+				transform: translateY(2.5px);
+				color: $left-primary-color;
+			}
+		}
+
+		hr {
+			margin: 2px 0 5px 0;
+			width: 100%;
+			border: 0.5px solid $left-hr-color;
+		}
+
+		a {
+			color: $left-link-color;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		.contact {
+			padding: 0 5px 0 10px;
+			height: fit-content;
+
+			.item {
+				display: flex;
+
+				.icon {
+					width: 25px;
+					margin: 4px 0;
+					color: $left-primary-color;
+				}
+				.text {
+					margin: 5px 0;
+					word-break: break-all;
+				}
+			}
+		}
+
+		.skills {
+			padding: 25px 5px 0 10px;
+			height: fit-content;
+
+			.skills-container {
+				width: 100%;
+				// height: 230px;
+				display: inline-block;
+
+				.item {
+					float: left;
+					width: fit-content;
+					padding: 2px 5px;
+					margin: 5px 8px 5px 0;
+					border-radius: 5px;
+					color: $left-skills-color;
+					background-color: $left-skills-background-color;
+					box-shadow: 0 0 0 1px $left-skills-shadow-color;
+				}
+			}
+		}
+
+		.languages {
+			padding: 20px 10px 0 10px;
+			height: fit-content;
+
+			.languages-container {
+				width: 100%;
+				height: fit-content;
+
+				.item {
+					width: 95%;
+					padding: 5px 0;
+					display: flex;
+					border-bottom: 1px dashed $left-separator-color;
+
+					&:last-child {
+						border-bottom: none;
+					}
+
+					.language {
+						width: 150px;
+						font-size: 15px;
+						color: $left-text-color;
+					}
+					.level {
+						width: fit-content;
+						display: flex;
+						height: 100%;
+						margin: auto;
+
+						.indicator {
+							margin: 0 3px;
+							width: 6px;
+							height: 6px;
+							background-color: $left-level-background-color;
+							border-radius: 100%;
+							border: 1px solid $left-level-border-color;
+							&.filled {
+								background-color: $left-level-filled-color;
+								border: 1px solid $left-level-filled-color;
+							}
+							&:last-child {
+								margin-right: 0;
+							}
+						}
+						.star {
+							font-size: 18px;
+							margin: 0 1px;
+							color: $left-level-filled-color;
+						}
+					}
+				}
+			}
+		}
+
+		.reference {
+			padding: 20px 5px 20px 10px;
+			height: fit-content;
+
+			.reference-item {
+				border-bottom: 1px dashed $left-separator-color;
+
+				&:last-child {
+					border-bottom: none;
+				}
+
+				.item {
+					display: flex;
+					&:last-child {
+						margin-bottom: 5px;
+					}
+
+					.text {
+						margin: 5px 0 2px;
+						padding: 0;
+					}
+					.rname {
+						font-size: 15px;
+						font-weight: bold;
+					}
+					.icon {
+						width: 25px;
+						margin: 5px 0 0 0;
+					}
+				}
+			}
+		}
+	}
+
+	.right-content {
+		padding: 15px 20px 15px 10px;
+		width: calc(100% - 255px);
+		min-width: 600px;
+		background-color: $right-background-color;
+
+		a {
+			color: $right-link-color;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		hr {
+			margin: 1.5px 0 5px 0;
+			width: 100%;
+			border: 0.5px solid $right-hr-color;
+		}
+
+		.heading {
+			font-size: 18px;
+			font-weight: bold;
+			margin: 0;
+			color: $right-primary-color;
+			span {
+				font-size: 18px;
+				width: fit-content;
+				margin-right: 6px;
+				transform: translateY(2.5px);
+				color: $right-primary-color;
+			}
+		}
+
+		.objective {
+			padding: 10px 10px 5px 10px;
+
+			.item {
+				font-size: 13.5px;
+				text-align: justify;
+				text-justify: inter-word;
+				color: $right-text-color;
+			}
+		}
+
+		.education {
+			padding: 10px 10px 0 10px;
+			font-size: 14px;
+
+			.row-table {
+				width: calc(100% -10px);
+				display: flex;
+				padding: 5px 5px 5px;
+				border-bottom: 1px dashed $right-separator-color;
+
+				&:last-child {
+					border-bottom: none;
+				}
+				&:nth-child(odd) {
+					// background-color: #fbfbfb;
+				}
+
+				.left-column {
+					width: 250px;
+					padding: 0;
+
+					.year {
+						width: fit-content;
+						font-size: 13px;
+						color: $right-year-color;
+						margin: 0 0 0 5px;
+						span {
+							font-size: 12px;
+							margin-right: 5px;
+							color: $right-calendar-icon-color;
+						}
+					}
+					.score {
+						width: fit-content;
+						margin: 6px 0 5px 21px;
+						font-size: 14px;
+						font-weight: bold;
+						color: $right-score-color;
+					}
+				}
+
+				.right-column {
+					width: 100%;
+					padding: 0;
+
+					.course {
+						font-size: 14px;
+						margin: 0;
+						color: $right-text-color;
+					}
+					.institution {
+						margin: 4px 0 0;
+						font-size: 13.5px;
+						color: $right-text-color;
+						font-weight: bold;
+					}
+					.university {
+						font-size: 13.5px;
+						margin: 4px 0 0 0;
+						color: $right-text-secondary-color;
+					}
+					.achievements {
+						font-size: 13.5px;
+						margin: 4px 0 0 0;
+						color: $right-text-secondary-color;
+					}
+				}
+			}
+		}
+
+		.experience {
+			padding: 10px 10px 0 10px;
+			font-size: 14px;
+
+			.row-table {
+				width: calc(100% -10px);
+				display: flex;
+				padding: 5px 5px;
+				border-bottom: 1px dashed $right-separator-color;
+
+				&:last-child {
+					border-bottom: none;
+				}
+
+				&:nth-child(odd) {
+					// background-color: #fbfbfb;
+				}
+
+				.left-column {
+					width: 250px;
+					padding: 0;
+
+					.year {
+						width: fit-content;
+						font-size: 13px;
+						color: $right-year-color;
+						margin: 2px 0 0 5px;
+						span {
+							font-size: 12px;
+							margin-right: 5px;
+							color: $right-calendar-icon-color;
+						}
+					}
+				}
+
+				.right-column {
+					width: 100%;
+					padding: 0;
+
+					.position {
+						margin: 0;
+						font-size: 14px;
+						color: $right-text-color;
+					}
+					.company {
+						margin: 4px 0 0 0;
+						font-size: 13.5px;
+						font-weight: bold;
+						color: $right-text-color;
+					}
+					.description {
+						font-size: 13.5px;
+						margin: 4px 0 0 0;
+						color: $right-text-secondary-color;
+					}
+				}
+			}
+		}
+
+		.certifications {
+			padding: 10px 10px 0 10px;
+			font-size: 14px;
+
+			.row-table {
+				width: calc(100% -10px);
+				display: flex;
+				padding: 5px 5px;
+				border-bottom: 1px dashed $right-separator-color;
+
+				&:last-child {
+					border-bottom: none;
+				}
+
+				&:nth-child(odd) {
+					// background-color: #fbfbfb;
+				}
+
+				.left-column {
+					width: 250px;
+					padding: 0;
+
+					.year {
+						margin: 2px 0 0 5px;
+						width: fit-content;
+						font-size: 13.5px;
+						color: $right-year-color;
+						span {
+							font-size: 12px;
+							margin-right: 5px;
+							color: $right-calendar-icon-color;
+						}
+					}
+					.score {
+						width: fit-content;
+						margin: 6px 0 5px 21px;
+						font-size: 14px;
+						font-weight: bold;
+						color: $right-score-color;
+						span {
+							margin-left: 2px;
+						}
+					}
+				}
+
+				.right-column {
+					width: 100%;
+					padding: 0;
+
+					.course {
+						margin: 0;
+						font-size: 14px;
+						color: $right-text-color;
+					}
+					.institution {
+						margin: 4px 0 0 0;
+						font-size: 13.5px;
+						font-weight: bold;
+						color: $right-text-color;
+					}
+					.description {
+						font-size: 13.5px;
+						margin: 4px 0 0 0;
+						color: $right-text-secondary-color;
+					}
+				}
+			}
+		}
+
+		.projects {
+			padding: 10px 10px 0 10px;
+			font-size: 14px;
+			color: $right-text-color;
+
+			.row-table {
+				width: calc(100% -10px);
+				padding: 5px 5px;
+				margin: 5px 0 0 0;
+				border-bottom: 1px dashed $right-separator-color;
+
+				&:last-child {
+					border-bottom: none;
+				}
+
+				&:nth-child(odd) {
+					// background-color: #fbfbfb;
+				}
+
+				li {
+					margin: 0 0 0 10px;
+					.title {
+						width: fit-content;
+						font-size: 14px;
+						font-weight: bold;
+						color: $right-text-color;
+					}
+					.link {
+						width: fit-content;
+						margin: 6px 0 5px 5px;
+						font-size: 13.5px;
+						color: $right-link-color;
+						text-decoration: underline;
+						span {
+							font-size: 12px;
+							margin: 0 5px 0 10px;
+							color: $right-text-secondary-color;
+						}
+					}
+				}
+				.description {
+					font-size: 13.5px;
+					margin: 5px 0 0 10px;
+					color: $right-text-color;
+				}
+			}
+
+			.repo_link {
+				font-size: 13.5px;
+				margin: 8px 0 5px 0;
+
+				span {
+					font-size: 12px;
+					margin: 0 5px 0 10px;
+					color: $right-text-secondary-color;
+				}
+				a {
+					color: $right-link-color;
+					text-decoration: underline;
+				}
+			}
+		}
+
+		.workshops {
+			padding: 15px 10px 0 10px;
+
+			.row-table {
+				width: calc(100% -10px);
+				display: flex;
+				padding: 5px 5px;
+				border-bottom: 1px dashed $right-separator-color;
+
+				&:last-child {
+					border-bottom: none;
+				}
+
+				&:nth-child(odd) {
+					// background-color: #fbfbfb;
+				}
+
+				.left-column {
+					width: 125px;
+					padding: 0;
+
+					.year {
+						margin: 2px 0 0 5px;
+						width: fit-content;
+						font-size: 13px;
+						color: $right-year-color;
+						span {
+							font-size: 12px;
+							margin-right: 5px;
+							color: $right-calendar-icon-color;
+						}
+					}
+				}
+
+				.right-column {
+					width: 100%;
+					padding: 0;
+
+					.description {
+						font-size: 13.5px;
+						margin: 0px 0 0 0;
+						color: $right-text-color;
+					}
+				}
+			}
+		}
+	}
+}

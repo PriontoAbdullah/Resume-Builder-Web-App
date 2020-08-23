@@ -1,0 +1,89 @@
+.btn {
+  margin-right: 5px;
+  border: none;
+  outline: none;
+  height: fit-content;
+  padding: 10px 12px;
+  border-radius: 4px;
+  font-size: 12pt;
+  text-decoration: none;
+  color: #1e1e1e;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-select: none;
+  background-color: #f8f9fa;
+  transition: all 200ms;
+}
+.btn-sm {
+  font-size: 11pt !important;
+  padding: 4px 8px !important;
+}
+.btn:hover {
+  box-shadow: 2px 2px 5px 0 #e0e0e0;
+  opacity: 0.9;
+}
+.btn:active,
+.btn:focus {
+  opacity: 1;
+  background-color: #fafafa;
+  box-shadow: 0px 0px 0px 3px #e0e0e0;
+}
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  &:active,
+  &:focus {
+    opacity: 1;
+    background-color: #0065d1;
+    box-shadow: 0px 0px 0px 3px #b0d6ff;
+  }
+}
+.btn-dark {
+  background-color: #4e4e4e;
+  color: #fff;
+  &:hover {
+    background-color: #2e2e2e;
+  }
+  &:active,
+  &:focus {
+    opacity: 1;
+    background-color: #2e2e2e;
+    box-shadow: 0px 0px 0px 3px #cecece;
+  }
+}
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+  &:active,
+  &:focus {
+    opacity: 1;
+    background-color: #218338;
+    box-shadow: 0px 0px 0px 3px #a7ecb7;
+  }
+}
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+  &:active,
+  &:focus {
+    opacity: 1;
+    background-color: #b42d3b;
+    box-shadow: 0px 0px 0px 3px #ffc2c8;
+  }
+}
+
+input,
+textarea {
+  width: 90%;
+  padding: 5px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #6e6e6e;
+  transition: ease-in-out 250ms;
+  &:focus {
+    box-shadow: 0 0 0 2.5px rgb(73, 197, 255);
+  }
+}

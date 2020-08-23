@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
 import aboutImage from '../../../images/left-image.png';
+import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
@@ -26,7 +27,7 @@ const About = () => {
                                 templates to create the total package for impressing employers. Your resume and cover
                                 letter will have the same design and fonts, making them the ideal match.
 							</p>
-                            <button class="btn btn-info mt-3"><a href="#About"> Discover More</a></button>
+                            <button class="main-button mt-3"><Link to='/'> Discover More</Link></button>
                         </div>
                     </div>
                 </div>

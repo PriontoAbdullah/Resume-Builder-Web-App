@@ -1,0 +1,142 @@
+@import './reusable.scss';
+
+.form-container {
+  width: 100%;
+  min-width: 278px;
+  padding: 10px;
+
+  .colorSchemeContainer {
+    display: flex;
+    height: fit-content;
+    margin-bottom: 15px;
+
+    p {
+      font-size: 18px;
+      margin: 0;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+    .colorContainer {
+      display: flex;
+      .colorScheme {
+        height: 20px;
+        width: 20px;
+        border-radius: 25px;
+        margin: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+        transition: ease-in-out 200ms;
+
+        &:hover {
+          transform: scale(1.15);
+        }
+      }
+    }
+  }
+
+  .file-btn {
+    width: fit-content;
+    padding: 6px 8px;
+    margin: 0 15px 15px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background-color: rgb(0, 142, 207);
+    color: #fff;
+    cursor: pointer;
+    transition: ease-in-out 200ms;
+
+    &:hover {
+      background-color: rgb(0, 141, 235);
+      box-shadow: 1px 1px 5px 0 #a0a0a0;
+    }
+  }
+
+  .form {
+    .section {
+      display: list-item;
+
+      &:first-child {
+        hr {
+          display: none;
+        }
+      }
+      hr {
+        margin-top: 20px;
+      }
+
+      .heading {
+        margin: 10px 0;
+      }
+      .label {
+        margin: 10px 0 2px 0;
+        width: fit-content;
+      }
+      button {
+        margin-left: auto;
+        margin-top: 10px;
+        margin-right: 35px;
+      }
+    }
+    .languages {
+      .row {
+        padding-right: 25px;
+        margin: 2px;
+        display: flex;
+        input {
+          margin: 5px 5px 5px 0;
+          &:first-child {
+            width: 125px;
+          }
+          &:last-child {
+            max-width: 50px;
+            margin: inherit 10px;
+          }
+        }
+        button {
+          margin: 7px 0;
+        }
+      }
+      button {
+        margin: 10px 0 0 2px;
+      }
+    }
+    .references,
+    .education,
+    .experience,
+    .certifications,
+    .projects,
+    .workshops {
+      .row {
+        display: flex;
+        padding-right: 25px;
+        padding-bottom: 20px;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+
+        .item {
+          input,
+          textarea {
+            width: 100%;
+            margin: 5px 0px 5px 0;
+          }
+        }
+        button {
+          margin: 7px 0;
+          margin-left: 20px;
+        }
+      }
+      button {
+        margin: 0 0 0 2px;
+      }
+    }
+
+    .projects > button {
+      margin: 0 0 15px 2px;
+    }
+  }
+}

@@ -55,7 +55,7 @@ const Header = () => {
               auth.user ?
                 <Link to='/' className='nav-link'>
                   <button onClick={() => { auth.signOut() }}
-                    className='btn btn-info'
+                    className='btn btn-primary'
                   >
                     Sign Out
                   </button>
@@ -63,7 +63,7 @@ const Header = () => {
                 :
                 <Link to='/login' className='nav-link'>
                   <button
-                    className='btn btn-info'
+                    className='btn btn-primary'
                   >
                     Sign Up
                   </button>

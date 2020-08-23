@@ -69,7 +69,7 @@ const SignUp = () => {
 
                             <div className="form-group">
                                 <button
-                                    className="btn btn-info btn-block"
+                                    className="btn btn-primary btn-block"
                                     type="submit"
                                 >
                                     Sign In
@@ -175,7 +175,7 @@ const SignUp = () => {
 
                             <div className="form-group">
                                 <button
-                                    className="btn btn-info btn-block"
+                                    className="btn btn-primary btn-block"
                                     type="submit"
                                 >
                                     Sign Up

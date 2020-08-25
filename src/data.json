@@ -1,0 +1,155 @@
+{
+	"contact": {
+		"name": "John Doe",
+		"photoUrl": "https://cdn0.iconfinder.com/data/icons/user-pictures/100/malecostume-512.png",
+		"location": "Asuliya, Dhaka, Bangladesh",
+		"phone": "+91 0123456789",
+		"email": "johndoe123@example.com",
+		"linkedin": "linkedin.com/in/johndoe123",
+		"github": "github.com/johndoe123"
+	},
+
+	"objective": "Accomplished leader in marketing communications seeking a new career path with a nonprofit organization. I am looking for an opportunity where I can use apply my passion for philanthropy and use my professional experience to drive positive change in my community.",
+
+	"education": [
+		{
+			"year": "Aug 2017 - Aug 2021",
+			"course": "B.Sc in Software Engineering – (In Progress)",
+			"institution": "Daffodil International University",
+			"university": "Dhaka, Bangladesh",
+			"percentage": "3.96",
+			"achievements": "Publication of IOT Based Home Automation System with Cloud Organizing in International Journal of Engineering & Technology"
+		},
+		{
+			"year": "July 2017",
+			"course": "Higher Secondary Certificate (HSC)",
+			"institution": "Cantonment Public School & Collage, Lalmonirhat",
+			"university": "Dinajpur Board",
+			"percentage": "5.00",
+			"achievements": ""
+		},
+		{
+			"year": "April 2015",
+			"course": "Secondary School Certificate (SSC)",
+			"institution": "Phakal Police lines school, Lalmonirhat",
+			"university": "Dinajpur Board",
+			"percentage": "5.00",
+			"achievements": "Recipient of General Grade Scholarship in JSC."
+		}
+	],
+
+	"languages": [
+		{ "language": "Bangla", "level": 5 },
+		{ "language": "English", "level": 5 },
+		{ "language": "Hindi", "level": 3 }
+	],
+
+	"experience": [
+		{
+			"year": "Jun 2020 - Current",
+			"company": "ABC Web App Ltd.",
+			"position": "Backend & Frontend Developer",
+			"description": "To work in a reputed software company where I can use my skills and knowledge to deliver value added results that provides me job satisfaction and self-development which help me achieve company’s goals and objectives."
+		},
+		{
+			"year": "July 2019 - Dec 2019",
+			"company": "Random Company Pvt. Ltd.",
+			"position": "Application Developer",
+			"description": "Created Web applications using React and NodeJs."
+		}
+	],
+
+	"certifications": [
+		{
+			"year": "Jul 2018 - Oct 2018",
+			"institution": "Google Cretification Program",
+			"course": "Mobile App Development",
+			"description": "This training was in the field of android app development.",
+			"score": "A+"
+		},
+		{
+			"year": "Jun 2019 - Dev 2019",
+			"institution": "Creative IT",
+			"course": "Web App Development",
+			"description": "The training program consisted of varoius types of networking technologies, routing techniques, etc",
+			"score": "85%"
+		}
+	],
+
+	"skills": [
+		"C",
+		"C++",
+		"HTML5",
+		"CSS3",
+		"JavaScript",
+		"jQuery",
+		"Node.js",
+		"MySQL",
+		"ES6",
+		"ExpressJS",
+		"MongoDB",
+		"Firebase",
+		"UI/UX",
+		"React Native"
+	],
+
+	"tools": [ "VSCode", "Chrome Dev", "PL/SQL", "Slack", "Trello", "Git" ],
+
+	"interests": [
+		"Machine Learning",
+		"IoT Automation",
+		"Artificial Intelligence",
+		"Data Science",
+		"Big Data",
+		"Cyber Security"
+	],
+
+	"projects": [
+		{
+			"title": "Project-1",
+			"link": "https://project1.myapp.com",
+			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+		},
+		{
+			"title": "Project-2",
+			"link": "https://project-2.random.com",
+			"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+		},
+		{
+			"title": "Some Random Project",
+			"link": "https://project-3.muapp.com",
+			"description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+		}
+	],
+
+	"projects_link": "https://some-more-projects.github.com",
+
+	"workshops": [
+		{
+			"year": "Sep 2014",
+			"description": "Attended a 2-day workshop on Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+		},
+		{
+			"year": "Nov 2018",
+			"description": "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+		}
+	],
+
+	"activities": [
+		{
+			"title": "Event manager at 1st year celebration of 173 batch DIU."
+		},
+		{
+			"title": "Volunteering work in 16th foundation day DIU"
+		}
+	],
+
+	"references": [
+		{
+			"name": "SAM Matiur Rahman ",
+			"desig": "Assistant Professor & Associate Head, Department of Software Engineering, Daffodil International University. ",
+			"phone": "+91 0123456789",
+			"email": "email@example.com"
+		}
+	]
+}

@@ -6,3 +6,29 @@
 html {
 	scroll-behavior: smooth;
 }
+
+.main-button {
+	color: #fff;
+	background-color: #17a2b8;
+	border-color: #17a2b8;
+	margin-right: 5px;
+	border: none;
+	outline: none;
+	height: -moz-fit-content;
+	height: fit-content;
+	padding: 10px 12px;
+	border-radius: 4px;
+	font-size: 12pt;
+	text-decoration: none;
+	color: #1e1e1e;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	-webkit-user-select: none;
+}
+
+.main-button:hover {
+	background-color: slateblue;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out,
+		box-shadow .15s ease-in-out;
+}
